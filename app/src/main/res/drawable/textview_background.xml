@@ -10,15 +10,15 @@
     <item android:state_focused="true">
         <shape android:shape="rectangle"  >
             <corners android:radius="10dp" />
-            <stroke android:width="1dip" android:color="@color/colorPrimaryDark" />
-            <solid android:color="@color/colorPrimaryDark"/>
+            <stroke android:width="1dip" android:color="@color/textview_bg" />
+            <solid android:color="@color/textview_bg"/>
         </shape>
     </item>
     <item >
         <shape android:shape="rectangle"  >
             <corners android:radius="10dp" />
-            <stroke android:width="1dip" android:color="@color/colorPrimaryDark" />
-            <gradient android:angle="-90" android:startColor="@color/colorPrimaryDark" android:endColor="@color/colorPrimaryDark" />
+            <stroke android:width="1dip" android:color="@color/textview_bg" />
+            <gradient android:angle="-90" android:startColor="@color/textview_bg" android:endColor="@color/textview_bg" />
         </shape>
     </item>
 </selector>
