@@ -26,39 +26,27 @@
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="@string/health_illness"
+                    android:hint="@string/surgical_procedure_intervention"
                     android:textColorHint="@color/colorPrimary"
                     android:paddingLeft="10dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.6"
                     android:background="@drawable/medical_history_textview"
                     android:textSize="12sp"
                     android:layout_marginRight="10dp"
                     android:layout_marginEnd="10dp" />
-                <android.support.v7.widget.AppCompatTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/since"
-                    android:textColor="@color/colorPrimary"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@drawable/medical_history_textview"
-                    android:textSize="12sp"
-                     />
 
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="@string/medication"
+                    android:hint="@string/cost"
                     android:textColorHint="@color/colorPrimary"
                     android:paddingLeft="10dp"
                     android:layout_weight="1"
                     android:layout_marginRight="10dp"
                     android:layout_marginEnd="10dp"
                     android:background="@drawable/medical_history_textview"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:paddingStart="10dp" />
                 <android.support.v7.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -77,9 +65,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="@string/health_illness"
+                    android:text="@string/surgical_procedure_intervention"
                     android:textColor="@color/colorPrimary"
-                    android:layout_weight="1"
+                    android:layout_weight="0.4"
+                    android:singleLine="true"
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:textStyle="bold"
@@ -90,20 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="@string/since"
-                    android:textColor="@color/colorPrimary"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="10dp"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="10dp"
-                    android:textSize="14sp"
-                    />
-                <android.support.v7.widget.AppCompatTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/medication"
+                    android:text="@string/cost"
                     android:textColor="@color/colorPrimary"
                     android:layout_weight="1"
                     android:layout_gravity="center"
@@ -123,6 +99,42 @@
                     android:textStyle="bold"
                     android:layout_marginEnd="10dp"
                     android:textSize="12sp"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:background="#bbdefb"
+                android:layout_marginTop="50dp">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/total_treatment_cost"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.6"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="18sp"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/inr_5000"
+                    android:textColor="#707070"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="18sp"
                     />
             </android.support.v7.widget.LinearLayoutCompat>
 

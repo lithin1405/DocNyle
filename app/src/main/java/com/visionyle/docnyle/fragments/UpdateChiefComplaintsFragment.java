@@ -7,13 +7,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.visionyle.docnyle.R;
 
-public class TreatmentPlansMedicationsFragment extends Fragment {
+public class UpdateChiefComplaintsFragment extends Fragment {
 
-    public TreatmentPlansMedicationsFragment() {
+    public UpdateChiefComplaintsFragment() {
         // Required empty public constructor
     }
 
@@ -26,7 +25,7 @@ public class TreatmentPlansMedicationsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.treatment_plan_medication_fragment, container, false);
+        return inflater.inflate(R.layout.update_chief_complaints_fragment, container, false);
     }
 
 }

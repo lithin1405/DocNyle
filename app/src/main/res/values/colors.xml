@@ -6,4 +6,7 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="textview_bg">#E0E0E0</color>
+    <color name="button_continue">#484848</color>
+    <color name="button_cancel">#90a4ae</color>
+    <color name="next_review_date">#e0e0e0</color>
 </resources>

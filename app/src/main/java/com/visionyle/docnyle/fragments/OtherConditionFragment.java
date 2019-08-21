@@ -4,16 +4,18 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.visionyle.docnyle.R;
+import com.visionyle.docnyle.adapters.ChiefComplaintsAdapter;
+import com.visionyle.docnyle.adapters.PagerAdapter;
 
-public class TreatmentPlansMedicationsFragment extends Fragment {
+public class OtherConditionFragment extends Fragment {
 
-    public TreatmentPlansMedicationsFragment() {
+    public OtherConditionFragment() {
         // Required empty public constructor
     }
 
@@ -26,7 +28,7 @@ public class TreatmentPlansMedicationsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.treatment_plan_medication_fragment, container, false);
+        return inflater.inflate(R.layout.other_condition_fragment, container, false);
     }
 
 }

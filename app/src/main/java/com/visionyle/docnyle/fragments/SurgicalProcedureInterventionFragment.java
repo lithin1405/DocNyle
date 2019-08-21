@@ -12,7 +12,6 @@ import android.widget.TextView;
 import com.visionyle.docnyle.R;
 
 public class SurgicalProcedureInterventionFragment extends Fragment {
-    TextView lbl_page;
 
     public SurgicalProcedureInterventionFragment() {
         // Required empty public constructor
@@ -27,10 +26,7 @@ public class SurgicalProcedureInterventionFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_page, container, false);
-        lbl_page=view.findViewById(R.id.lbl_page);
-        lbl_page.setText("Surgical Procedure Intervention");
-        return view;
+        return inflater.inflate(R.layout.surgical_procedure_interval_fragment, container, false);
     }
 
 }

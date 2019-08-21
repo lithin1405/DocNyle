@@ -25,6 +25,16 @@
     <string name="since">Since</string>
     <string name="medication">Medication</string>
     <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="contin">Continue</string>
+    <string name="drug_name">Drug Name</string>
+    <string name="dosage">Dosage</string>
+    <string name="no_of_days">No. of days</string>
+    <string name="next_review_date">Next Review Date</string>
+    <string name="surgical_procedure_intervention">Surgical Procedure / Intervention</string>
+    <string name="cost">Cost</string>
+    <string name="total_treatment_cost">Total Treatment Cost</string>
+    <string name="inr_5000">INR 5000</string>
 
     <string-array name="stepLabels">
         <item>Approval</item>

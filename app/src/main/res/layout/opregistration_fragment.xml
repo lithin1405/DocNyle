@@ -274,7 +274,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
-                android:background="@drawable/round_login_user_password"
+                android:background="@drawable/button_continue"
                 android:textColor="@color/white"
                 android:text="Continue" />
 
@@ -284,7 +284,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
-                android:background="@drawable/round_login_user_password"
+                android:background="@drawable/button_cancel"
                 android:textColor="@color/white"
                 android:text="Cancel" />
         </android.support.v7.widget.LinearLayoutCompat>
