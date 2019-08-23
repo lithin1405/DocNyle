@@ -9,4 +9,7 @@
     <color name="button_continue">#484848</color>
     <color name="button_cancel">#90a4ae</color>
     <color name="next_review_date">#e0e0e0</color>
+
+    <color name="contact_name">#333333</color>
+    <color name="contact_number">#8c8c8c</color>
 </resources>
