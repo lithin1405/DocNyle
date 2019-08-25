@@ -114,8 +114,9 @@
                 <android.support.v7.widget.AppCompatEditText
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:gravity="center"
-                    android:text="@string/search"
+                    android:paddingStart="10dp"
+                    android:hint="@string/search"
+                    android:textColorHint="@color/colorPrimary"
                     android:textColor="@color/colorPrimary"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
@@ -123,7 +124,7 @@
                     android:layout_gravity="center"
                     android:background="@drawable/rectangle"
                     android:textSize="16sp"
-                    />
+                    android:paddingLeft="10dp" />
                 <android.support.v7.widget.AppCompatButton
                     android:id="@+id/appCompatButtonLogin"
                     android:layout_width="match_parent"
