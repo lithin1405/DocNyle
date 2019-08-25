@@ -14,27 +14,27 @@ import android.widget.TextView;
 
 import com.visionyle.docnyle.R;
 
-public class PeriodicalDailyRegisterReportActivity extends AppCompatActivity {
+public class SettingsActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_periodical_daily_register_report);
+        setContentView(R.layout.activity_settings);
         //Start Toolbar
         Toolbar toolbar =  findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         TextView title =  toolbar.findViewById(R.id.toolbar_title);
         ImageView homeicon = toolbar.findViewById(R.id.homeicon);
         ImageView logout = toolbar.findViewById(R.id.logout);
-        title.setText("Periodical Daily Register");
+        title.setText("Settings");
         title.setPadding(0, 0, 60, 0);
         title.setGravity(Gravity.CENTER);
         homeicon.setVisibility(View.VISIBLE);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new AlertDialog.Builder(PeriodicalDailyRegisterReportActivity.this)
+                new AlertDialog.Builder(SettingsActivity.this)
                         .setTitle("Alert")
                         .setMessage("Are you sure you want to Logout?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {

@@ -50,7 +50,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     // do nothing
                 } finally {
-                    Intent intent=new Intent(getApplicationContext(),SearchPatientHistoryActivity.class);
+                    Intent intent=new Intent(getApplicationContext(),LoginActivity.class);
                     startActivity(intent);
                     finish();
                 }

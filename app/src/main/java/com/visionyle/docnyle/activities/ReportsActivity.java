@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
@@ -14,27 +15,28 @@ import android.widget.TextView;
 
 import com.visionyle.docnyle.R;
 
-public class PeriodicalDailyRegisterReportActivity extends AppCompatActivity {
+public class ReportsActivity extends AppCompatActivity {
+    private CardView dailyregister,patienthistory,treatmentsummary,treatmentregister;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_periodical_daily_register_report);
+        setContentView(R.layout.activity_reports);
         //Start Toolbar
         Toolbar toolbar =  findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         TextView title =  toolbar.findViewById(R.id.toolbar_title);
         ImageView homeicon = toolbar.findViewById(R.id.homeicon);
         ImageView logout = toolbar.findViewById(R.id.logout);
-        title.setText("Periodical Daily Register");
+        title.setText("Reports");
         title.setPadding(0, 0, 60, 0);
         title.setGravity(Gravity.CENTER);
         homeicon.setVisibility(View.VISIBLE);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new AlertDialog.Builder(PeriodicalDailyRegisterReportActivity.this)
+                new AlertDialog.Builder(ReportsActivity.this)
                         .setTitle("Alert")
                         .setMessage("Are you sure you want to Logout?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -51,6 +53,40 @@ public class PeriodicalDailyRegisterReportActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),DashboardActivity.class);
+                startActivity(intent);
+            }
+        });
+        dailyregister=findViewById(R.id.dailyregister);
+        patienthistory=findViewById(R.id.patienthistory);
+        treatmentsummary=findViewById(R.id.treatmentsummary);
+        treatmentregister=findViewById(R.id.treatmentregister);
+        dailyregister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),PeriodicalDailyRegisterReportActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        patienthistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),SearchPatientHistoryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        treatmentsummary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),ConsolidateTreatmentSummaryActivity.class);
+                startActivity(intent);
+            }
+        });
+        treatmentregister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),PeriodicalTreatmentRegisterActivity.class);
                 startActivity(intent);
             }
         });
