@@ -1,10 +1,12 @@
 package com.visionyle.docnyle.activities;
 
 import android.annotation.SuppressLint;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.visionyle.docnyle.R;
+import com.visionyle.docnyle.fragments.OPRegistrationFragment;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -65,6 +68,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),PatientEntryActivity.class);
+                intent.putExtra("zero",0);
                 startActivity(intent);
             }
         });
@@ -72,6 +76,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),PatientEntryActivity.class);
+                intent.putExtra("zero",1);
                 startActivity(intent);
             }
         });
@@ -79,6 +84,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),PatientEntryActivity.class);
+                intent.putExtra("zero",2);
                 startActivity(intent);
             }
         });
@@ -86,6 +92,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),PatientEntryActivity.class);
+                intent.putExtra("zero",3);
                 startActivity(intent);
             }
         });
@@ -93,6 +100,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),PatientEntryActivity.class);
+                intent.putExtra("zero",4);
                 startActivity(intent);
             }
         });
@@ -100,6 +108,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),PatientEntryActivity.class);
+                intent.putExtra("zero",5);
                 startActivity(intent);
             }
         });

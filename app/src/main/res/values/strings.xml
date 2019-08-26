@@ -76,4 +76,6 @@
     <string name="periodical_treatment_summary">Periodical Treatment Summary</string>
     <string name="all">All</string>
     <string name="visit_category">Visit Category</string>
+    <string name="enter_patient_name">Enter Patient Name</string>
+    <string name="patient_name">Patient Name</string>
 </resources>

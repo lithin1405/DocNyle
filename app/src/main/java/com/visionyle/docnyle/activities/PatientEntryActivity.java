@@ -11,6 +11,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -32,12 +33,14 @@ import com.visionyle.docnyle.adapters.PagerAdapter;
 public class PatientEntryActivity extends AppCompatActivity {
     StepperIndicator indicator;
     TextView title;
+    int position=0;
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint({"SetTextI18n", "ClickableViewAccessibility"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_entry);
+        position=getIntent().getIntExtra("zero",0);
         final ViewPager pager = findViewById(R.id.pager);
         assert pager != null;
         pager.setAdapter(new PagerAdapter(getSupportFragmentManager()));
@@ -51,80 +54,115 @@ public class PatientEntryActivity extends AppCompatActivity {
 
         indicator.setStepCount(6);
 
-        indicator.addOnStepClickListener(new StepperIndicator.OnStepClickListener() {
-            @Override
-            public void onStepClicked(int step) {
-                pager.setCurrentItem(step, true);
-            }
-        });
+//        indicator.addOnStepClickListener(new StepperIndicator.OnStepClickListener() {
+//            @Override
+//            public void onStepClicked(int step) {
+//                pager.setCurrentItem(step, false);
+//            }
+//        });
 
-        pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float v, int i1) {
-                if (position == 0) {
+        pager.setCurrentItem(position, false);
 
-                    title.setText("OP Registration");
+        pager.beginFakeDrag();
 
-                } else if (position == 1) {
-
-                    title.setText("Medical History");
-
-                }else if (position == 2) {
-
-                    title.setText("Chief Complaints");
-
-                }else if (position == 3) {
-
-                    title.setText("Diagnostic Aids / Investigations");
-
-                }else if (position == 4) {
-
-                    title.setText("Treatment Plans / Medications");
-
-                }else if (position == 5) {
-
-                    title.setText("Surgical Procedure / Intervention");
-
-                }
-            }
-
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onPageSelected(int position) {
-                if (position == 0) {
-
-                    title.setText("OP Registration");
+        pager.setHorizontalScrollBarEnabled(false);
 
 
-                } else if (position == 1) {
+        if (position == 0) {
 
-                    title.setText("Medical History");
+            title.setText("OP Registration");
 
-                }else if (position == 2) {
+        } else if (position == 1) {
 
-                    title.setText("Chief Complaints");
+            title.setText("Medical History");
 
-                }else if (position == 3) {
+        }else if (position == 2) {
 
-                    title.setText("Diagnostic Aids / Investigations");
+            title.setText("Chief Complaints");
 
-                }else if (position == 4) {
+        }else if (position == 3) {
 
-                    title.setText("Treatment Plans / Medications");
+            title.setText("Diagnostic Aids / Investigations");
 
-                }else if (position == 5) {
+        }else if (position == 4) {
 
-                    title.setText("Surgical Procedure / Intervention");
+            title.setText("Treatment Plans / Medications");
 
-                }
+        }else if (position == 5) {
 
-            }
+            title.setText("Surgical Procedure / Intervention");
 
-            @Override
-            public void onPageScrollStateChanged(int i) {
+        }
 
-            }
-        });
+//        pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+//            @Override
+//            public void onPageScrolled(int position, float v, int i1) {
+//                if (position == 0) {
+//
+//                    title.setText("OP Registration");
+//
+//                } else if (position == 1) {
+//
+//                    title.setText("Medical History");
+//
+//                }else if (position == 2) {
+//
+//                    title.setText("Chief Complaints");
+//
+//                }else if (position == 3) {
+//
+//                    title.setText("Diagnostic Aids / Investigations");
+//
+//                }else if (position == 4) {
+//
+//                    title.setText("Treatment Plans / Medications");
+//
+//                }else if (position == 5) {
+//
+//                    title.setText("Surgical Procedure / Intervention");
+//
+//                }
+//            }
+//
+//            @SuppressLint("SetTextI18n")
+//            @Override
+//            public void onPageSelected(int position) {
+//                if (position == 0) {
+//
+//                    title.setText("OP Registration");
+//
+//
+//                } else if (position == 1) {
+//
+//                    title.setText("Medical History");
+//
+//                }else if (position == 2) {
+//
+//                    title.setText("Chief Complaints");
+//
+//                }else if (position == 3) {
+//
+//                    title.setText("Diagnostic Aids / Investigations");
+//
+//                }else if (position == 4) {
+//
+//                    title.setText("Treatment Plans / Medications");
+//
+//                }else if (position == 5) {
+//
+//                    title.setText("Surgical Procedure / Intervention");
+//
+//                }
+//
+//            }
+//
+//            @Override
+//            public void onPageScrollStateChanged(int i) {
+//
+//            }
+//        });
+
+
 
 //        RemixerInitialization.initRemixer(getApplication());
 //        Remixer.getInstance().setSynchronizationMechanism(new LocalStorage(getApplicationContext()));
@@ -134,6 +172,8 @@ public class PatientEntryActivity extends AppCompatActivity {
 //        final FloatingActionButton remixerButton = findViewById(R.id.remixerButton);
 //        RemixerFragment.newInstance().attachToFab(this, remixerButton);
     }
+
+
 
 //    @RangeVariableMethod(minValue = 6, maxValue = 70, initialValue = 20)
 //    public void setLabelSize(Float fontSize) {
