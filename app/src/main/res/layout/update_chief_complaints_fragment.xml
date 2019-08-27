@@ -21,11 +21,12 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:layout_gravity="center"
                 android:orientation="horizontal">
                 <android.support.v7.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
+                    android:gravity="center_vertical"
                     android:text="OP No :"
                     android:textColor="@color/black"
                     android:layout_weight="1"

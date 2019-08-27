@@ -81,20 +81,44 @@
                         android:gravity="center"
                         android:background="@drawable/textview_background"
                         android:textSize="16sp" />
-
-                <android.support.v7.widget.AppCompatTextView
-                    android:id="@+id/agegender"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:text="@string/age_gender"
-                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/textview_background"
-                    android:textSize="16sp" />
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/age"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/age"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/textview_background"
+                        android:textSize="16sp"
+                        android:layout_marginStart="20dp" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="@string/gender"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:drawableRight="@drawable/drop_down_arrow"
+                        android:background="@drawable/textview_background"
+                        android:textSize="16sp"
+                        android:drawableEnd="@drawable/drop_down_arrow"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp" />
+                </LinearLayout>
+
+
                 <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/visitdate"
                     android:layout_width="match_parent"

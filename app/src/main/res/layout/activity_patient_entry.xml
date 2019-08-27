@@ -50,6 +50,9 @@
             app:stpi_stepCount="6"
             app:stpi_showStepNumberInstead="true"
             />
+        <View android:background="@color/contact_number"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
 
 
     </RelativeLayout>
