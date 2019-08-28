@@ -16,40 +16,37 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
-            <android.support.v7.widget.LinearLayoutCompat
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/autoitemid"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:padding="10dp"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enter_op_no"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/rectangle"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                tools:ignore="RtlSymmetry"
+                android:paddingStart="10dp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/select_date"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
-                android:orientation="horizontal">
-                <android.support.v7.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:text="OP No :"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:textSize="14sp"
-                    />
-                <android.support.design.widget.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:hint="Enter OP No."
-                    android:textColorHint="@color/colorPrimary"
-                    android:paddingLeft="10dp"
-                    android:background="@drawable/rectangle"
-                    android:textSize="12sp"
-                    android:inputType="number"
-                    android:paddingStart="10dp" />
-            </android.support.v7.widget.LinearLayoutCompat>
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:background="@drawable/rectangle"
+                android:textSize="16sp"
+                android:drawableEnd="@drawable/drop_down_arrow" />
             <android.support.v7.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/blood_investigation_rectangle"
                 android:orientation="horizontal">
                 <android.support.design.widget.TextInputEditText
