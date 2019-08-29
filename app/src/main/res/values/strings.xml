@@ -81,4 +81,6 @@
     <string name="patient_name">Patient Name</string>
     <string name="enter_search_treatment">Enter Search Treatment</string>
     <string name="enter_op_no">Enter OP No.</string>
+    <string name="upload">Upload</string>
+    <string name="upload_document_provision">Upload Document Provision</string>
 </resources>
