@@ -54,6 +54,7 @@
                 android:padding="10dp"
                 android:orientation="horizontal">
                 <android.support.design.widget.TextInputEditText
+                    android:id="@+id/ethealthillness"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/surgical_procedure_intervention"
@@ -66,6 +67,7 @@
                     android:layout_marginEnd="10dp" />
 
                 <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etsince"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/cost"
@@ -78,6 +80,7 @@
                     android:textSize="12sp"
                     android:paddingStart="10dp" />
                 <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/additem"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -130,6 +133,18 @@
                     android:layout_marginEnd="10dp"
                     android:textSize="12sp"
                     />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="true" />
             </android.support.v7.widget.LinearLayoutCompat>
 
             <android.support.v7.widget.LinearLayoutCompat
